@@ -1,5 +1,5 @@
-import '../lib/rpi_lab2.dart';
+import '../lib/rpi_lab4.dart';
 
 void main() async {
-  await RpiLab2().run();
+  await RpiLab4().run();
 }

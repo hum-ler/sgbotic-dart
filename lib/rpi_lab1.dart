@@ -4,6 +4,15 @@ import 'dart:io';
 import 'package:rpi_gpio/gpio.dart';
 import 'package:rpi_gpio/rpi_gpio.dart';
 
+/// Sends output to blink a LED. Reads input from a push button.
+///
+/// Blinks one of three LEDs. Push the button to switch to the next LED.
+///
+/// Press any key to exit.
+///
+/// ```
+/// await RpiLab1().run();
+/// ```
 class RpiLab1 {
   /// The length of each pulse.
   static const Duration _blink = Duration(milliseconds: 500);

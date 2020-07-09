@@ -6,6 +6,14 @@ import 'package:rpi_gpio/rpi_gpio.dart';
 
 import 'pwm.dart';
 
+/// Sends a PWM signal to a LED. Varies the period and duty cycle of the PWM.
+///
+/// Press any key to exit a function.
+///
+/// ```
+/// await RpiLab2().runVaryPeriod();
+/// await RpiLab2().runVaryDutyCycle();
+/// ```
 class RpiLab2 {
   /// The period of the PWM.
   static const Duration _period = Duration(milliseconds: 200);

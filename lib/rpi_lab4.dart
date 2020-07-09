@@ -4,6 +4,15 @@ import 'dart:io';
 import 'package:rpi_gpio/gpio.dart';
 import 'package:rpi_gpio/rpi_gpio.dart';
 
+/// Uses a HC-SR04 ultrasonic sensor.
+///
+/// The green LED lights up when an object is less than 150cm from the sensor. Otherwise the red LED lights up.
+///
+/// Press any key to exit.
+///
+/// ```
+/// await RpiLab4().run();
+/// ```
 class RpiLab4 {
   /// The speed of sound in air at 27°C, 100kPa, 90% relative humidity.
   static const double _speedOfSound = 349.19;

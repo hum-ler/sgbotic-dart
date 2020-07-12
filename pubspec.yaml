@@ -1,4 +1,4 @@
-name: led_test
+name: sgbotic_dart
 dependencies:
   meta: ^1.2.1
   rpi_gpio: ^0.5.0
